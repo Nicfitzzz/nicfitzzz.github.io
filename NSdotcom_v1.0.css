@@ -1,0 +1,352 @@
+/*###############################
+	NSdotCom Stylesheet
+###############################*/
+/*##########################
+        CSS RESET
+##########################*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+ul {
+    list-style:none outside none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+    font-family: JuraRegular;
+    color: #000;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin: 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*##########################
+        CSS RESET (end)
+##########################*/
+/*##########################
+		FONTS
+##########################*/
+@font-face {
+	font-family: JuraRegular; src:url(/fonts/Jura-Regular.otf);
+}
+@font-face {
+	font-family: JuraMedium; src:url(/fonts/Jura-Medium.otf);
+}
+@font-face {
+	font-family: Archistico; src:url(/fonts/Archistico_Simple.ttf);
+}
+/*#############################################################################
+###############################################################################
+                Mobile/Small Screen Style
+###############################################################################
+#############################################################################*/
+@media screen and (min-width: 300px) and (max-width: 499px) and (orientation: portrait) {
+
+/*##########################
+		NAVIGATION
+##########################*/
+	#aboveimage {
+		background: #000;
+	}
+	#belowimage {
+		background: gray;
+	}
+	header {
+		text-align: center;		
+		height: 26em;		
+		background: url(/images/landingPageImageiphone.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 0 3em;
+
+	}
+	nav {
+		width: 100%;
+		text-align: center;
+	}
+	nav ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	ul li {
+		float: left;
+		margin: 0 auto;
+		margin-bottom: 0;
+		padding: 0 1em;	
+	}
+	#firstNav li {
+		width: 30%;
+	}
+	#firstNav a {
+		color: #fff;
+	}
+	#firstNav li:first-child {
+		border-right: solid #fff 1px;
+		text-align: right;
+	} 
+	#firstNav li:nth-child(2) {
+		border-left: solid #fff 1px;
+		text-align: left;
+	}
+	header {
+		text-align: center;
+	}
+	h1 {
+		font-family: JuraRegular;
+		font-size: 3em;
+		position: relative;
+		margin-top: 5.7em;
+		color: #fff;
+		text-align: right;
+		padding-right: .25em;
+	}
+	h2 {
+		font-family: JuraMedium;
+		font-size: 1em;
+		color: #D12E2E;
+	}
+	#secondNav a {
+		font-size: 1.3em;
+		color: #fff;
+		padding: .25em .25em;s
+	}
+	#secondNav li:first-child {
+		border-right: solid #D12E2E 1px;
+	}
+	#secondNav li:nth-child(2) {
+		border-right: solid #D12E2E 1px;
+		border-left: solid #D12E2E 1px;
+	}
+	#secondNav li:nth-child(3) {
+		border-left: solid #D12E2E 1px;
+	}
+	#secondNav li {
+		margin-bottom: 0px;
+		padding: 0;
+	}
+	#secondNav {
+		margin-top: 2.3em;
+		margin-bottom: 1em;
+	}
+	.container90 p {
+		font-family: JuraRegular;
+		text-align: right;
+		padding-right: .5em;
+		margin-top: -5.2em;
+	}
+	#content {
+		margin-top: 10em;
+	}
+}/*########### END MOBILE/SMALL SCREEN #############*/
+/*#####################################################
+				DESKTOP/LARGE Screen
+#######################################################
+#####################################################*/
+@media screen and (min-width: 500px) {
+	body {
+		text-align: center;
+		background: #000;
+	}
+	#main {
+		text-align: center;
+	}
+	header {
+		background: url(/images/landingPageImage.jpg);
+		background-size: 100%;
+		height: 500px;
+		min-width: 700px;
+		background-repeat: no-repeat;
+		background-position: 0 7em;
+		text-align: center;
+		z-index: 100;
+	}
+	.container90 {
+		position: relative;
+		width: 100%;
+		max-width: 1024px;
+		min-width: 980px;
+		margin: 0 auto;
+	}
+	nav {
+		width: 100%;
+		text-align: center;
+	}
+	img {
+		float: left;
+		margin-left: 0;
+		width: 100px;
+		height: 100px;
+		padding: 1em;
+		margin-top: -2em;
+	}
+	nav ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	ul li {
+		float: left;
+		margin: 0 auto;
+		margin-bottom: .25em;
+		padding: 0 1em;	
+	}
+	#firstNav li {
+		width: 30%;
+	}
+	#firstNav a {
+		color: #fff;
+	}
+	#firstNav li:first-child {
+		border-right: solid #fff 1px;
+		text-align: right;
+	} 
+	#firstNav li:nth-child(2) {
+		border-left: solid #fff 1px;
+		text-align: left;
+	}
+	#secondNav {
+		position: relative;
+		width: 100%;
+		max-width: 1024px;
+		margin-top: 23.7em;
+		margin-left: 0;
+	}
+	#secondNav a {
+		color: #D12E2E;
+		font-size: 2em;
+	}
+	#secondNav li:first-child {
+		border-right: solid #fff 1px;
+	}
+	#secondNav li:nth-child(2) {
+		border-right: solid #fff 1px;
+		border-left: solid #fff 1px;
+	}
+	#secondNav li:nth-child(3) {
+		border-left: solid #fff 1px;
+	}
+	h2 {
+		font-family: Archistico;
+		position: relative;
+		font-size: 2.7em;
+		color: #D12E2E;
+		margin-top: -10.7em;
+		text-align: right;
+		padding-right: .25em;
+	}
+	h1 {
+		font-family: JuraRegular;
+		font-size: 4em;
+		position: relative;
+		margin-top: -1.5em;
+		color: #fff;
+		text-align: right;
+		padding-right: .25em;
+	}
+	p 	{
+		font-family: JuraRegular;
+		text-align: right;
+		font-size: 1.3em;
+		margin-top: -.3em;
+		padding-right: 1em;
+		color: #fff;
+	}
+	section div {
+		background: gray;
+		position: relative;
+	}
+
+}
