@@ -195,17 +195,15 @@ input, select {
     }
     nav a {
         padding: 1.4em 2.5%;
-        font-size: 1em; 
+        font-size: 1em;
+        line-height: 1em; 
+        transition: font-size .25s ease-in, background-color 1s;
     }
     nav a:hover {
         background-color: #c44500;
         color: #fff;
         font-size: 1.5em;
         padding: .77em 2.5%;
-        -moz-transition: background-color 1s ease-in-out, color .5s linear;
-         -webkit-transition: background-color 1s ease-in-out, color .5s linear; 
-         -ms-transition: background-color 1s ease-in-out, color .5s linear; 
-        transition: background-color 1s ease-in-out, color .7s linear;
     }
     header {
         width: 30%;

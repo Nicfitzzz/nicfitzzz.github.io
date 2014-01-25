@@ -1,3 +1,4 @@
+if (!Modernizr.touch) {
 $(document).ready(function () {
                 $("#home").hover(
                   function () {
@@ -21,19 +22,25 @@ $(document).ready(function () {
 
                 $("#about").hover(
                   function () {
-                      $('body').css("background", "yellow");
+                      $('body').css("background", "#0058c4");
+                      $('#about').css("background", "#0058c4");
                   }, 
                   function () {
                       $('body').css("background", "#c44500");
+                      $('#about').css("background", "#fff");
                   }
                 );
 
                 $("#contact").hover(
                   function () {
-                      $('body').css("background", "yellow");
+                      $('body').css("background", "#00c498");
+                      $('#contact').css("background", "#00c498");
+
                   }, 
                   function () {
                       $('body').css("background", "#c44500");
+                      $('#contact').css("background", "#fff");
                   }
                 );
             });
+};
