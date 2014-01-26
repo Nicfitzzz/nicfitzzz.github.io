@@ -144,6 +144,9 @@ html {
         width: 100%;
         text-align: center;
         text-transform: uppercase;
+        position: fixed;
+        margin-top: -6.7rem;
+        z-index: 100;
     }
     nav a {
         text-decoration: none;
@@ -157,6 +160,7 @@ html {
         transition: font-size .25s ease-in, background-color .5s;
     }
     header {
+        margin-top: 7rem;
         text-align: center;
         clear: left;
     }
@@ -182,6 +186,10 @@ html {
         color: #fff;
         padding: 0 2rem;
     }
+/*#################################
+    PORTFOLIO STYLING
+#################################*/
+
 }
 /*#############################################################################
 ###############################################################################
@@ -190,11 +198,13 @@ html {
 #############################################################################*/
 @media screen and (min-width: 600px) {
     #imagebackground {
+        position: fixed;
+        margin-top: -5.6rem;
         width: 100%;
-        position: absolute;
         background: url(/images/miyajima100.png);
         background-repeat: no-repeat;
         background-size: 100%;
+        min-width: 800px;
         height: 100%;
         opacity: 0.15;
         filter: alpha(opacity=15);
@@ -207,16 +217,44 @@ html {
     nav a:hover {
         font-size: 1.5rem;
     }
+    ul {
+        margin-top: -6.6rem;
+    }
     header {
         width: 40%;
-        padding-top: 2rem;
-        padding-left: 3rem;
+        margin-top: 7rem;
+        margin-left: 5rem;
     }
     section {
-        bottom: -3rem;
+        bottom: -10rem;
     }
     p {
         padding: 0 4rem;
+    }
+    #selfie {
+        border-radius: 50%;
+        width: 10rem;
+    }
+    #selfie {
+        border-radius: 50%;
+        width: 10rem;
+        z-index: -10;
+        margin-left: 5rem;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    #about-content h1 {
+        margin-top: -5rem;
+        margin-left: 15rem;
+    }
+    #about-content {
+        margin-left: 3rem;
+        position: absolute;
+        top: 7rem;
+        display: none;
+        width: 50%;
+        min-width: 35rem;
+        text-align: justify;
     }
 }
 /*#############################################################################
@@ -226,14 +264,24 @@ html {
 #############################################################################*/
 @media screen and (min-width: 800px) {
     header {
-        padding-top: 4rem;
-        padding-left: 5rem;
+        margin-top: 9rem;
+        margin-left: 7rem;
+    }
+    ul {
+        margin-top: -8.6rem;
+    }
+    #imagebackground {
+        margin-top: -7.6rem;
     }
     section {
-        bottom: -10rem;
+        bottom: -9rem;
     }
     p {
+        font-size: 1.25rem;
         padding: 0 5rem;
+    }
+    h1 {
+        font-size: 4rem;
     }
 }
 /*#############################################################################
@@ -245,15 +293,33 @@ html {
     nav a {
         font-size: 1.25rem;
     }
+    header {
+        margin-top: 11rem;
+    }
+    ul {
+        margin-top: -10.6rem;
+    }
+    #imagebackground {
+        margin-top: -9.6rem;
+    }
     h1 {
         font-size: 4rem;
     }
     section {
-        width: 40%;
-        padding-left: 5rem;
-        bottom: -7rem;
+        width: 80%;
+        margin: auto;
+        bottom: -14rem;
         font-size: 1.25rem;
+    }  
+}
+/*#############################################################################
+###############################################################################
+                RIDICULOUS SCREEN DESKTOP/RETINA LAPTOP 
+###############################################################################
+#############################################################################*/
+@media screen and (min-width: 1440px) {
+    section {
+        bottom: -18rem;
     }
 }
-
 
