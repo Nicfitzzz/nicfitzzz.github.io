@@ -213,11 +213,12 @@ html {
         line-height: 4rem;
     }
     #portfolio img {
+        position: relative;
         width: 60%;
         border-radius: 50%;
-        border: solid gray 3px;
+        border: solid #fff 2px;
         margin-top: 3rem;
-        z-index: 100;
+        z-index: 99;
     }
     #portfolio p {
         padding: 0 2rem;
@@ -298,8 +299,10 @@ html {
         padding-bottom: 3rem;
     }
     #selfie {
+        position: relative;
         width: 8rem;
         margin: 5rem 0;
+        z-index: 99
     }
     #aboutme h1 {
         font-size: 4rem;
