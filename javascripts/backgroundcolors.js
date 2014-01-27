@@ -1,5 +1,6 @@
-if (!Modernizr.touch) {
+
 $(document).ready(function () {
+        if (!Modernizr.touch) {
                 $("#home").hover(
                   function () {
                       $('body').css("background", "#c44500");
@@ -8,7 +9,7 @@ $(document).ready(function () {
                   },
                   function () {
                       $('body').css("background", "#c44500");
-                      $('#home').css("background", "#fff");
+                      $('#home').css("background-color", "rgba(255, 255, 255, 0.0)");
                       $('#home').css("color", "#000");
                   }
                 );
@@ -21,7 +22,7 @@ $(document).ready(function () {
                   },
                   function () {
                    
-                      $('#folio').css("background", "#fff");
+                      $('#folio').css("background", "rgba(255, 255, 255, 0.0)");
                       $('#folio').css("color", "#000");
                   }
                 );
@@ -34,7 +35,7 @@ $(document).ready(function () {
                   }, 
                   function () {
                 
-                      $('#about').css("background", "#fff");
+                      $('#about').css("background", "rgba(255, 255, 255, 0.0)");
                       $('#about').css("color", "#000");
                   }
                 );
@@ -47,38 +48,36 @@ $(document).ready(function () {
                   }, 
                   function () {
               
-                      $('#contact').css("background", "#fff");
+                      $('#contact').css("background", "rgba(255, 255, 255, 0.0)");
                       $('#contact').css("color", "#000");
                   }
                 );
+};//modernizr
 /*************************ON CLICK SCRIPT***************************/
                 $("#home").click(
                   function() {
-                      $('#imagebackground').css("background-image", "url(/images/miyajima100.png)");
+                      $('#imagebackground').css("background-image", "url(/images/miyajima.png)");
+                      $('#imagebackground').css("background-position", "top");
                       $('#imagebackground').css("background-size", "100%");
-                      $('#about-content').css("visibility", "hidden");
-                      $('#landingpage').css("display", "block");
-                      $('#landingpage').css("visibility", "visible");
+                      $('#imagebackground').css("margin-top", "0");
                   }
                 );
                 $("#folio").click(
                   function() {
                       $('#imagebackground').css("background-image", "url(/images/develop.png)");
                       $('#imagebackground').css("background-size", "100%");
-                      $('#about-content').css("visibility", "hidden");
-                      $('#landingpage').css("visibility", "hidden");
+                      $('#imagebackground').css("background-position", "top");
+                      $('#imagebackground').css("margin-top", "44.5rem");
                   }
                 );
                 $("#about").click(
                   function() {
                       $('#imagebackground').css("background-image", "url(/images/fambot.png)");
-                      $('#imagebackground').css("background-size", "466.5px");
-                      $('#imagebackground').css("margin-top", "-4rem");
-                      $('#imagebackground').css("background-position", "right");
-                      $('#landingpage').css("visibility", "hidden");
-                      $('#about-content').css("display", "block");
-                      $('#about-content').css("visibility", "visible");
+                      $('#imagebackground').css("background-position", "bottom");
+                      $('#imagebackground').css("background-size", "100%");
+                      $('#imagebackground').css("margin-top", "0");
+    
                   }
                 );
-            });//document ready
-};//modernizr
+});//document ready
+
