@@ -59,6 +59,7 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-image", "url(/images/miyajima.png)");
                       $('#imagebackground').css("background-position", "top");
                       $('#imagebackground').css("background-size", "100%");
+                      $('#imagebackground').css("bottom", "0");
                       $('#imagebackground').css("margin-top", "0");
                   }
                 );
@@ -66,8 +67,9 @@ $(document).ready(function () {
                   function() {
                       $('#imagebackground').css("background-image", "url(/images/develop.png)");
                       $('#imagebackground').css("background-size", "100%");
-                      $('#imagebackground').css("background-position", "top");
-                      $('#imagebackground').css("margin-top", "44.5rem");
+                      $('#imagebackground').css("background-position", "bottom");
+                      $('#imagebackground').css("bottom", "124rem");
+                      $('#imagebackground').css("margin-top", "63.3rem");
                   }
                 );
                 $("#about").click(
@@ -75,7 +77,7 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-image", "url(/images/fambot.png)");
                       $('#imagebackground').css("background-position", "bottom");
                       $('#imagebackground').css("background-size", "100%");
-                      $('#imagebackground').css("margin-top", "0");
+                      $('#imagebackground').css("bottom", "48.5rem");
     
                   }
                 );

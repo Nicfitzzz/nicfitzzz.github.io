@@ -241,6 +241,49 @@ html {
         text-align: justify;
         padding: 0 2rem;
     }
+
+/*=================CONTACT FORM STYING===================*/
+    #contactform {
+        text-align: center;
+        background: #00c498;
+        width: 100%;
+    }
+    #contactform h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    input {
+        font-size: 1rem;
+        padding: 1rem .25rem;
+        text-align: left;
+        width: 90%;
+        max-width: 800px;
+        margin: .5rem 0;
+        font-family: JosefinSans-Light;
+        border: none;
+        border-radius: 2px;
+    }
+    textarea {
+        height: 15rem;
+        font-size: 1rem;
+        padding: 1rem .25rem;
+        text-align: left;
+        width: 90%;
+        max-width: 800px;
+        margin: .5rem 0;
+        font-family: JosefinSans-Light;
+        border: none;
+        border-radius: 2px;
+    }
+    #sbutton {
+        text-align: center;
+        background-color: #E8ED55;
+        color: #000;
+    }
+    input:focus, select:focus, textarea:focus, button:focus {
+        outline: none;
+    }
 /*#############################################################################
 ###############################################################################
                 SMALL DESKTOP/LAPTOP 
@@ -258,6 +301,7 @@ html {
         min-width: 800px;
         opacity: .15;
         z-index: 1;
+        overflow: none;
     } 
     #landingpage {
         background-size: 100%;
@@ -333,12 +377,15 @@ html {
     h1 {
         font-size: 4rem;
     }
+    #portfolio h1, #contactform h1 {
+        padding-top: 2rem;
+    }
     #portfolio img {
         width: 18rem;
     }
     #selfie{
         width: 10rem;
-    }
+    } 
 }
 /*#############################################################################
 ###############################################################################
@@ -372,6 +419,9 @@ html {
     #aboutme p {
         padding: .5rem 5rem;
     }
+    #portfolio h1, #contactform h1 {
+        padding-top: 4rem;
+    }
 /*#############################################################################
 ###############################################################################
                 RIDICULOUS SCREEN DESKTOP/RETINA LAPTOP 
@@ -390,7 +440,15 @@ html {
     }
     #aboutme h1 {
         font-size: 6rem;
-
+    }
+    #portfolio h1 {
+        font-size: 5rem;
+    }
+    #contactform h1 {
+        font-size: 3rem;
+    }
+    input, textarea {
+        font-size: 1.5rem;
     }
 }
 

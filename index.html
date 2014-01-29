@@ -32,7 +32,7 @@
 			<li><a id="home" href="#">home</a></li>
 			<li><a id="folio" href="#portfolio">folio</a></li>
 			<li><a id="about" href="#aboutme">about</a></li>
-			<li><a id="contact" href="#">contact</a></li>
+			<li><a id="contact" href="#contactform">contact</a></li>
 		</ul>
 	</nav>
 	<div id="imagebackground"></div><!--tori gate for desktop size-->
@@ -78,6 +78,23 @@
 				<p>When I'm not busy learning, designing, or coding, (which is rare) I try to find time to play basketball or volleyball, ride my bike in the mountains or on the street, make beautiful landscape photography, travel, and spend time with my wonderful family.<p>
 				<p>Yes, I try to keep busy.</p>
 			</div>
+		</section>
+
+<!--===================CONTACT FORM ===================-->
+
+		<section id="contactform">
+				<form method="post" class="contactform" action="contact.php">
+						<h1>Let's create something! Send me a message!</h1>
+					<fieldset>
+							<label for="name"></label>
+							<input ID="name" name="name" type="text" placeholder="Name" required aria-required="true" autofocus maxlength="50">
+							<label for="email"></label>
+							<input ID="email" name="email" type="email" required aria-required="true" placeholder="Email" maxlength="50">
+							<label for="message"></label>
+							<textarea ID="message" name="comments" type="text" maxlength="1000" placeholder="Message!"></textarea>
+							<input ID="sbutton" type="submit" value="Contact Neil">
+						</fieldset>
+					</form>
 		</section>
 
 </body>
