@@ -1,0 +1,112 @@
+<!--===============================
+		neilsalazar.com v2.0
+================================-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--=============================
+			BROWSER TITLING 
+		==============================-->
+			<link rel="icon" style="text/image" href="">
+		<title>
+		</title>
+		<!--=============================
+			Control Broswer's Scaling
+		===============================-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!--=============================
+			CSS Links
+		==============================-->
+		<link rel="stylesheet" href="NSdotcom.css"/>
+		<!--=============================
+			JQuery Links
+		==============================-->
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js"></script>
+		<script src="/javascripts/backgroundcolors.js"></script> 		
+	</head>
+<body>
+	<nav>
+		<ul>
+			<li><a id="home" href="#">home</a></li>
+			<li><a id="folio" href="#portfolio">folio</a></li>
+			<li><a id="about" href="#aboutme">about</a></li>
+			<li><a id="contact" href="#contactform">contact</a></li>
+		</ul>
+	</nav>
+<!--=================LANDING PAGE=====================-->
+	<!--<div id="imagebackground"></div><!--tori gate for desktop size-->
+	<div id="landingpage">
+	<div id="landingpagelayer">
+	<header>
+		<h1><a href="#">&lsaquo;develop&rsaquo;</a></h1>
+		<h1><a href="#">design</a></h1>
+		<img id="logo" src="/images/NSlogo-white.png" alt="Neil Salazar Logo"/>
+	</header>
+		<p>Hi. My name is Neil. I create and code things on the web, turning visions into reality. I would love to help make your next vision, a reality!</p>
+	</div>
+	</div>	
+	<main>
+<!--================PORTFOLIO SECTION==================-->
+		
+			<section id="portfolio">
+			<div class="black">
+			<div id="portfoliolayer">
+				<h1>Portfolio &amp; Projects</h1>
+			<div id="foliocontent1">
+				<img id="piece1" src="/images/onepiece.jpg" alt="Web portfolio version 1"/>
+				<p>Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.  </p>
+				<a href="http://arendainfinancial.com" target="blank"><img id="piece2" src="/images/twopiece.jpg" alt="screen shot of arendainfinancial.com"/></a>
+				<p>Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum.  Nulla non fringilla diam.  </p>
+			</div>
+			<div id="foliocontent2">
+				<img id="piece3" src="/images/threepiece.jpg" alt="portfolio filler"/>
+				<p>Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.</p>
+				<img id="piece4" src="/images/fourpiece.jpg" alt="spot holder for JTrip Project"/>
+				<p>Proin ut quam eros. Donec sed lobortis diam. Nulla nec odio lacus. Quisque porttitor egestas dolor in placerat. Nunc vehicula dapibus ipsum.  Nulla non fringilla diam.  </p>
+			</div>
+		</div>
+		</div>
+		</section>
+
+<!--================ABOUT SECTION======================-->
+		
+		<section id="aboutme">
+		<div id="aboutmelayer">
+			<div id="aecontent">
+				<img id="selfie" src="/images/me.jpg" alt="pic of Neil">
+				<h1>this.isNeil</h1>
+				<br>
+				<p>I love developing and designing beautiful, simple, and easy-to-use places on the web. I strive to create spaces that exhibit beautiful imagery, engaging content, and useable interfaces. I currenlty use HTML, CSS, JQuery, JavaScript, and a pinch of PHP to write and maintain clean code that is responsive and 'future proof'. I am always educating myself on the latest trends, techniques, and best practices for web development and design.</p>
+				<br>
+				<p>When I'm not busy learning, designing, or coding, (which is rare) I try to find time to play basketball or volleyball, ride my bike in the mountains or on the street, make beautiful landscape photography, travel, and spend time with my wonderful family.<p>
+				<p>Yes, I try to keep busy.</p>
+			</div>
+		</div>
+		</section>
+
+<!--===================CONTACT FORM ===================-->
+
+		<section id="contactform">
+		<div id="contactformlayer">
+			<form method="post" class="contactform" action="contact.php">
+				<h1>Let's create something! Send me a message!</h1>
+				<fieldset>
+					<label for="name"></label>
+						<input ID="name" name="name" type="text" placeholder="Name" required aria-required="true" autofocus maxlength="50">
+						<br>
+					<label for="email"></label>
+						<input ID="email" name="email" type="email" required aria-required="true" placeholder="Email" maxlength="50">
+						<br>
+					<label for="message"></label>
+						<textarea ID="message" name="comments" type="text" maxlength="1000" placeholder="Message!"></textarea>
+						<br>
+						<input ID="sbutton" type="submit" value="Contact Neil">
+				</fieldset>
+			</form>
+		</div>
+		</section>
+	</main>
+</body>
+</html>

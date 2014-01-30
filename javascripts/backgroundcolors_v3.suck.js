@@ -61,7 +61,6 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-size", "100%");
                       $('#imagebackground').css("bottom", "0");
                       $('#imagebackground').css("margin-top", "0");
-                      $('#imagebackground').css("opacity", ".15")
                   }
                 );
                 $("#folio").click(
@@ -69,9 +68,8 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-image", "url(/images/develop.png)");
                       $('#imagebackground').css("background-size", "100%");
                       $('#imagebackground').css("background-position", "bottom");
-                      $('#imagebackground').css("bottom", "130rem");
+                      $('#imagebackground').css("bottom", "124rem");
                       $('#imagebackground').css("margin-top", "63.3rem");
-                      $('#imagebackground').css("opacity", ".15")
                   }
                 );
                 $("#about").click(
@@ -80,7 +78,7 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-position", "bottom");
                       $('#imagebackground').css("background-size", "100%");
                       $('#imagebackground').css("bottom", "48.5rem");
-                      $('#imagebackground').css("opacity", ".04")
+    
                   }
                 );
 });//document ready
