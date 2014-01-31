@@ -163,7 +163,7 @@ html {
         left: 0;
         right: 0;
         margin-top: .25rem;
-        z-index: 100;
+        z-index: 999;
         text-align: center;
         text-decoration: none;
         background-color: rgba(255, 255, 255, .90);
@@ -224,6 +224,9 @@ html {
     }
     #portfolio p {
         padding: 0 2rem;
+    }
+    #portfolio a {
+        color: #c44500;
     }
     #foliodepth {
         background: #fff;
@@ -305,6 +308,9 @@ html {
     }
     input:focus, select:focus, textarea:focus, button:focus {
         outline: none;
+    }
+     #sbutton:hover {
+        background: #86FC42;
     }
 /*#############################################################################
 ###############################################################################
@@ -502,6 +508,8 @@ html {
     }
     input, textarea {
         font-size: 1.5rem;
+        position: relative;
+        z-index: 100;
     }
 }
 
