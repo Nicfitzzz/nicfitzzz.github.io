@@ -64,6 +64,8 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
+    position: relative;
+    z-index: 100;
 }
 
 /* change colours to suit your needs */
@@ -212,7 +214,7 @@ html {
         padding:0 5rem;
         line-height: 4rem;
     }
-    #portfolio img {
+    .previews {
         position: relative;
         width: 60%;
         border-radius: 50%;
@@ -223,7 +225,25 @@ html {
     #portfolio p {
         padding: 0 2rem;
     }
-   
+    #foliodepth {
+        background: #fff;
+        color: #000;
+        padding-top: 7rem;
+        margin-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    #foliodepth h1 {
+        color: #000;
+    }
+    .foliopics {
+        border-radius: 0;
+        width: 80%;
+    }
+    #foliodepth p {
+        padding-top: 1rem;
+        margin-bottom: 5rem;
+        text-align: justify;
+    }
 /*================== ABOUT STYLING ====================*/
     #selfie {
         border-radius: 50%;
@@ -231,6 +251,8 @@ html {
         margin: 2rem; 
     }
     #aboutme {
+        margin-top: -7rem;
+        padding-top: 7rem;
         clear: both;
         background: rgb(57, 34, 0);
         text-align: center;
@@ -324,6 +346,12 @@ html {
         margin-left: 5rem;
         margin-right: 5rem;
     }
+     #foliodepth {
+        display: inline-block;
+    }
+    .foliopics {
+        max-width: 400px;
+    }
 /*================== PORTFOLIO STYLING ====================*/
     #foliocontent1 {
         float: left;
@@ -380,7 +408,7 @@ html {
     #portfolio h1, #contactform h1 {
         padding-top: 2rem;
     }
-    #portfolio img {
+    .previews {
         width: 18rem;
     }
     #selfie{
@@ -388,6 +416,11 @@ html {
     } 
     #aboutme h1 {
         font-size: 4rem;
+    }
+    .desc {
+        max-width: 800px;
+        display: block;
+        margin: auto;
     }
 }
 /*#############################################################################
@@ -431,6 +464,17 @@ html {
     #portfolio h1, #contactform h1 {
         padding-top: 4rem;
     }
+    .intro {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #foliodepth img, .desc {
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+    }
+
 /*#############################################################################
 ###############################################################################
                 RIDICULOUS SCREEN DESKTOP/RETINA LAPTOP 

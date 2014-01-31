@@ -69,8 +69,8 @@ $(document).ready(function () {
                       $('#imagebackground').css("background-image", "url(/images/develop.png)");
                       $('#imagebackground').css("background-size", "100%");
                       $('#imagebackground').css("background-position", "bottom");
-                      $('#imagebackground').css("bottom", "130rem");
-                      $('#imagebackground').css("margin-top", "63.3rem");
+                      /*$('#imagebackground').css("top", "130rem");*/
+                      $('#imagebackground').css("bottom", "235rem");
                       $('#imagebackground').css("opacity", ".15")
                   }
                 );
