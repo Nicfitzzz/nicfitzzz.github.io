@@ -188,13 +188,13 @@ html {
     h1 {
         font-size: 3rem;
         color: #fff;
-        margin-top: 1rem;
     }
     h1 a {
         color: #fff;
     }
     #logo {
         width: 5rem;
+        margin-top: 1rem;
     }
     #landingpage p {
         color: #fff;
@@ -268,12 +268,12 @@ html {
     }
 
 /*=================CONTACT FORM STYING===================*/
-    #contactform {
+    #contactneil {
         text-align: center;
         background: #00c498;
         width: 100%;
     }
-    #contactform h1 {
+    #contactneil h1 {
         font-size: 2rem;
         text-align: center;
         padding-bottom: 3rem;
@@ -327,7 +327,7 @@ html {
         height: 100%;
         background-repeat: no-repeat;
         min-width: 800px;
-        opacity: .03;
+        opacity: .15;
         z-index: 1;
         overflow: none;
     } 
@@ -344,9 +344,8 @@ html {
         font-size: 1.5rem;
     }
     header {
-        width: 40%;
+        width: 100%;
         margin-top: 9rem;
-        margin-left: 5rem;
     }
     #landingpage p {
         margin-left: 5rem;
@@ -398,7 +397,6 @@ html {
 
     header {
         margin-top: 10rem;
-        margin-left: 7rem;
     }
     section {
         bottom: -9rem;
@@ -411,7 +409,7 @@ html {
     h1 {
         font-size: 4rem;
     }
-    #portfolio h1, #contactform h1 {
+    #portfolio h1, #contactneil h1 {
         padding-top: 2rem;
     }
     .previews {
@@ -464,10 +462,10 @@ html {
     #aboutme p {
         padding: .5rem 5rem;
     }
-    #contactform h1 {
+    #contactneil h1 {
         font-size: 2.5rem;
     }
-    #portfolio h1, #contactform h1 {
+    #portfolio h1, #contactneil h1 {
         padding-top: 4rem;
     }
     .intro {
@@ -503,7 +501,7 @@ html {
     #portfolio h1 {
         font-size: 5rem;
     }
-    #contactform h1 {
+    #contactneil h1 {
         font-size: 3rem;
     }
     input, textarea {

@@ -52,6 +52,16 @@ $(document).ready(function () {
                       $('#contact').css("color", "#000");
                   }
                 );
+
+                  $(function(){
+                      $("a.js_onPageLink").bind("click", function (event) {
+                          event.preventDefault ? event.preventDefault() : event.returnValue = false;
+                          var target = $(this).attr("href");
+                      $("html, body").stop().animate({
+                          scrollLeft: $(target).offset().left,
+                          scrollTop: $(target).offset().top}, 1200);
+                        });
+                      });
 };//modernizr
 /*************************ON CLICK SCRIPT***************************/
                 $("#home").click(

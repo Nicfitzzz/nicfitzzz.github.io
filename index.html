@@ -8,9 +8,14 @@
 		<!--=============================
 			BROWSER TITLING 
 		==============================-->
-			<link rel="icon" style="text/image" href="">
+			<link rel="icon" style="text/image" href="/images/nslogov2.png">
 		<title>
+			Neil Salazar - Developer | Designer
 		</title>
+		<!--=============================
+			ICON LINK 
+		==============================-->
+		<link rel="icon" style="text/image" href="/images/favicon.ico">
 		<!--=============================
 			Control Broswer's Scaling
 		===============================-->
@@ -20,31 +25,36 @@
 		==============================-->
 		<link rel="stylesheet" href="NSdotcom.css"/>
 		<!--=============================
-			JQuery Links
+			Javasctipt/JQuery Links
 		==============================-->
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js">
+			</script>
+		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js">
+			</script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+			</script>
 		<script src="/javascripts/backgroundcolors.js"></script> 		
 	</head>
-<body>
+<body id="title">
 	<nav>
 		<ul>
-			<li><a id="home" href="#">home</a></li>
-			<li><a id="folio" href="#portfolio">folio</a></li>
-			<li><a id="about" href="#aboutme">about</a></li>
-			<li><a id="contact" href="#contactform">contact</a></li>
+			<li><a id="home" class="js_onPageLink" href="#title">home</a></li>
+			<li><a id="folio" class="js_onPageLink" href="#portfolio">folio</a></li>
+			<li><a id="about" class="js_onPageLink" href="#aboutme">about</a></li>
+			<li><a id="contact" class="js_onPageLink" href="#contactneil">contact</a></li>
 		</ul>
 	</nav>
 	<div id="imagebackground"></div><!--tori gate for desktop size-->
 	<div  id="landingpage">
 	<header>
-		<h1><a href="#">&lsaquo;develop&rsaquo;</a></h1>
-		<h1><a href="#">design</a></h1>
-		<img id="logo" src="/images/NSlogo-white.png" alt="Neil Salazar Logo"/>
+		<h1><a href="#foliodepth" class="js_onPageLink">&lsaquo;develop&rsaquo;</a></h1>
+		<a href="#foliodepth" class="js_onPageLink"><img id="logo" src="/images/nslogov2white.png" alt="Neil Salazar Logo"/></a>
+		<h1><a href="#foliodepth" class="js_onPageLink">design</a></h1>
+		
 	</header>
 	<main>
 		<section>
-			<p>Hi. My name is Neil. I create and code things on the web, turning visions into reality. I would love to help make your next vision, a reality!</p>
+			<p>Hi. My name is Neil. I create and code things on the web. I would love to help you code and create your next project!</p>
 		</section>
 	</div>	
 <!--================PORTFOLIO SECTION==================-->
@@ -53,21 +63,21 @@
 				<br>
 			<div id="foliocontent1">
 				<a href="http://arendainfinancial.com" target="blank"><img class="previews" src="/images/afscreenshot.jpg" alt="screen shot of arendainfinancial.com"/></a>
-				<p>A simple website I created for a client. Click image above to see it live. <a href="#foliodepth">Learn more.</a></p>
+				<p>A simple website I created for a client. Click image above to see it live. <a class="js_onPageLink" href="#foliodepth">Learn more.</a></p>
 				<img class="previews" src="/images/fourpiece.jpg" alt="Web portfolio version 1"/>
-				<p>Currently in the early stages of creaing a website for a high school fundraiser known as a 'Bunkasai'. Right now working with students to gather information and brainstorm designs. Stay tuned...</p>
+				<p>Currently in the early stages of creating a website for a high school fundraiser known as a 'Bunkasai'. Right now working with students to gather information and brainstorm designs. Stay tuned...</p>
 				<br>
 			</div>
 			<div id="foliocontent2">
 				<a href="http://projects.neilsalazar.com/japan-trip-2010.html"><img class="previews" src="/images/jtrippiece.jpg" alt="JTrip Project"/></a>
-				<p>Current project to inform and promote a biennual trip to Japan.<a href="#foliodepth"> Learn more.</a></p></p>
+				<p>Current project to inform and promote a biennual trip to Japan.<a class="js_onPageLink" href="#foliodepth"> Learn more.</a></p></p>
 				<img class="previews" src="/images/threepiece.jpg" alt="portfolio filler"/>
 				<p>Simple banner design for my photography website, which is currently lacking enough photos to make it worthwhile. Slowly building, but perpetually in motion.</p>
 				
 				<br>
 			</div>
 			<div id="foliodepth">
-				<h1>Responsive Design</h1>
+				<h1>Being Responsive</h1>
 				<p class="intro">I surf the web on my phone, my tablet, my laptop, and my 27" monitor. I know I'm not alone, so I venture to make every website I make provide an optimal experience for all its viewers... regardless of their preferred device.</p>
 				<a href="http://arendainfinancial.com" target="blank"><img class="foliopics" src="/images/afportfolio.jpg" alt="Arendain Financial website image"/></a>
 				<p class="desc">My client, Joel, from Arendain Financial wanted a basic site that looked professional and modern. He needed a page that provided information for potential clients, while still being useful for current clients. Together we collaborated about design, copy, his needs, and how we could meet them.<br>
@@ -99,7 +109,7 @@
 
 <!--===================CONTACT FORM ===================-->
 
-		<section id="contactform">
+		<section id="contactneil">
 				<form method="post" class="contactform" action="contact.php">
 						<h1>Let's create something! Send me a message!</h1>
 					<fieldset>
