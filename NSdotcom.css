@@ -111,7 +111,7 @@ input, select {
     vertical-align:middle;
 }
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 /*##########################
         CSS RESET (end)
@@ -156,6 +156,11 @@ html {
     p {
         line-height: 1.25rem;
         letter-spacing: .05rem;
+        font-family: Avenir;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
     }
 /*===================LANDING PAGE STYLES=====================*/
     nav {
@@ -217,13 +222,15 @@ html {
     .previews {
         position: relative;
         width: 60%;
-        border-radius: 50%;
         border: solid #fff 2px;
         margin-top: 3rem;
         z-index: 99;
+        border-radius: 50%;
+        transition: .5s;
     }
     #portfolio p {
         padding: 0 2rem;
+        text-align: justify;
     }
     #portfolio a {
         color: #c44500;
@@ -285,7 +292,7 @@ html {
         width: 90%;
         max-width: 800px;
         margin: .5rem 0;
-        font-family: JosefinSans-Light;
+        font-family: Avenir;
         border: none;
         border-radius: 2px;
     }
@@ -297,7 +304,7 @@ html {
         width: 90%;
         max-width: 800px;
         margin: .5rem 0;
-        font-family: JosefinSans-Light;
+        font-family: Avenir;
         border: none;
         border-radius: 2px;
     }
@@ -318,7 +325,9 @@ html {
 ###############################################################################
 #############################################################################*/
 @media screen and (min-width: 600px) {
-  
+    p {
+        font-family: JosefinSans-Light;
+    }
     #imagebackground {
         position: absolute;
         background: url(/images/miyajima.png);
@@ -348,10 +357,15 @@ html {
         margin-top: 9rem;
     }
     #landingpage p {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin: 0 auto;
     }
-     #foliodepth {
+    #portfolio p {
+        padding: 1rem 5rem;
+    }
+    .previews:hover {
+        border-radius: 0%;
+    }
+    #foliodepth {
         display: inline-block;
     }
     .foliopics {
@@ -405,12 +419,23 @@ html {
         font-size: 1.25rem;
         padding: 0 5rem;
         line-height: 1.6rem;
+        max-width: 700px;
+        text-align: center;
     }
     h1 {
         font-size: 4rem;
     }
     #portfolio h1, #contactneil h1 {
         padding-top: 2rem;
+    }
+    #foliodepth {
+        width: 100%;
+    }
+    #foliodepth p {
+        padding: 1.5rem 5rem;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 5rem;
     }
     .previews {
         width: 18rem;
@@ -452,6 +477,7 @@ html {
     }  
     p {
         line-height: 1.7rem;
+        max-width: 900px;
     }
     #selfie {
         width: 11rem;
