@@ -1,0 +1,619 @@
+/*##########################
+        CSS RESET
+##########################*/
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*##########################
+        CSS RESET (end)
+##########################*/
+a {
+    text-decoration: none;
+}
+a:active {
+    color: #fff;
+}
+html {
+    font-size: 16pt;
+    font-family: AshburyLig, JosefinSans-Light, Avenir;
+    hyphens: auto;
+}
+/*##########################
+        BORDER BOX
+##########################*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+/*#########################
+        FONT FAMILIES
+##########################*/
+@font-face {
+    font-family: AshburyLig; src: url(/fonts/AshburyLig-webfont.ttf);
+}
+/*#############################################################################
+###############################################################################
+                Mobile/Small Screen Style
+###############################################################################
+#############################################################################*/
+@media screen and (min-width: 300px) {
+    body {
+    }
+    #landingpage {
+        position: relative;
+        background: #fff;
+        padding-top: 1rem;
+        z-index: -5;
+        text-align: center;
+        padding-bottom: 7rem;
+        z-index: 100;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .07rem;
+        font-size: .65rem;
+        line-height: 1rem;
+        z-index: 999999;
+    }
+    #ribbonkeeper {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+    ul {
+        width: 90%;
+        margin: 0 auto;
+        background: #FACF41;
+    }
+    ul:before, ul:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        height: 1.25rem;
+        bottom: 7rem;
+        left: 7%;
+        width: 50%;
+        top: .6rem;
+        background: #777;
+        -webkit-box-shadow: 0 15px 5px #777;
+        -moz-box-shadow: 0 15px 5px #777;
+        box-shadow: 0 15px 5px #777;
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        -o-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        tranform: rotate(-3deg);
+    }
+    ul:after {
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        tranform: rotate(3deg);
+        right: 7%;
+        left: auto;
+    }
+    ul li {
+        display: inline-block;
+        margin: 0 -.125rem;
+        padding: .75rem .35rem;
+        vertical-align: middle;
+        line-height: 1rem;
+        height: 2.5rem;
+    }
+    ul li a {
+        color: #4D4D4D;
+        transition: .25s;
+    }
+    ul li a:visited {
+        color: #4d4d4d;
+    }
+    ul li a:hover {
+        color: #fff;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+        color: #4D4D4D;
+    }
+    #landingpage h1:first-child {
+        padding-top: 5rem;
+    }
+    .logo {
+        width: 20%;
+        margin: .5rem;
+        padding: 0;
+    }
+    #landingpage p {
+        font-size: .75rem;
+        text-align: justify;
+        padding: 3rem 1rem;
+        hyphens: auto;
+        line-height: .9rem;
+        padding-bottom: 0rem;
+    }
+/**************PORTFOLIO****************/
+    section {
+        position: relative;
+        background: rgb(252, 241, 199);
+        text-align: center;
+        padding: 7rem 0;
+        padding-bottom: 4rem;
+    }
+    #portfolio h1 {
+        margin-bottom: 1rem;
+    }
+    #portfolio h1:hover, #portfolio h2:hover {
+        color: #416CFA;
+    }
+    #portfolio h2 {
+        font-size: 1.5rem;
+        color: #4d4d4d;
+        margin-bottom: 3rem;
+    }
+    #foliocontainer {
+        padding-top: 5rem;
+    }
+    #foliocontainer a:visited {
+    color: #fff;
+    }
+    #foliocontainer a:active {
+    color: #fff;
+    }
+    #foliocontainer img {
+        position: relative;
+        width: 75%;
+        display: inline-block;
+        margin: 1rem;
+        max-width: 300px;
+        border: solid #fff 7px;
+        box-shadow: 1px 1px 3px #777;
+    }
+    #portfolio p, #foliodepth p, #aboutme p {
+        font-size: .75rem;
+        padding: 1rem 1rem;
+        padding-bottom: 3rem;
+        text-align: justify;
+        hyphen: auto;
+        line-height: .9rem;
+        color: #4D4D4D;
+    }
+    #foliodepth {
+        background: #fff;
+    }
+    .foliopics {
+        width: 90%;
+    }
+/*******************ABOUT ME********************/
+    #aboutme {
+        text-align: center;
+        padding: 7rem 0;
+        background: #d7d7d7;    
+    }
+    #selfie {
+        width: 33%;
+        border-radius: 50%;
+    }
+    #aboutme p {
+        padding-bottom: 0;
+    }
+/*****************CONTACT********************/
+    #contactneil {
+        padding-bottom: 11rem;
+    }
+    #contactneil h1 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    input {
+        width: 90%;
+        border: none;
+        color: #000;
+        margin-top: .5rem;
+        padding: .75rem .25rem;
+    }
+    textarea {
+        width: 90%;
+        border: none;
+        height: 7.75rem;
+        margin-top: .75rem;
+        padding: .75rem .25rem;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+    }
+    #sbutton {
+        background: -webkit-linear-gradient(#87A2FA, #698BFA); /* For Safari */
+        background: -o-linear-gradient(#87A2FA, #698BFA); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#87A2FA, #698BFA); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#87A2FA, #698BFA); /* Standard syntax */
+        transition: .25s;
+        text-transform: uppercase;
+        letter-spacing: .07rem;
+        color: #4d4d4d;
+        line-height: 1rem;
+        vertical-align: middle;
+    }
+    #sbutton:hover {
+        color: #fff;
+        font-size: .65rem;
+    }
+    footer {
+        text-align: center;
+        font-size: .5rem;
+        text-transform: uppercase;
+        letter-spacing: .10rem;
+        color: #4d4d4d;
+        background: rgb(252, 241, 199);
+    }
+}
+/*#############################################################################
+###############################################################################
+                DESKTOP/ENHANCED STYLES
+###############################################################################
+#############################################################################*/
+@media screen and (min-width: 600px) {
+    ul {
+        max-width: 700px;
+    }
+    ul li {
+        padding: .75rem 1rem;
+    }
+    ul li a:hover {
+        font-size: .9rem;
+    }
+    ul:before, ul:after {
+        height: 1rem;
+        -webkit-box-shadow: 0 17px 10px #777;
+        -moz-box-shadow: 0 17px 10px #777;
+        box-shadow: 0 17px 10px #777;
+    }
+    #lpbox {
+        width: 50%;
+        max-width: 400px;
+        background: #fff;
+        margin: 2.4rem auto;
+        margin-bottom: 0;
+        height: 30rem;
+    }
+    #lpbox:before, #lpbox:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 5px rgba(7, 7, 7, .4);
+        top: 4.7rem;
+        bottom: 5px;
+        left: 25%;
+        width: 50%;
+        right: 25%;
+        max-width: 400px;
+        margin: auto;
+    }
+    #landingpage {
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    #landingpage:before {
+        background: url(/images/miyajima.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-filter: grayscale(.33);
+        opacity: .75;
+    }
+
+/*********************PORTFOLIO**********************/
+    #portfolio {
+        background: rgba(255, 255, 255, .5);
+        position: relative;
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+    #portfolio:before {
+        background: #fff;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-filter: grayscale(.7);
+    }
+    #pbox, #foliocontent1, #foliocontent2 {
+        width: 50%;
+        max-width: 400px;
+        background: #fff;
+        margin: .5rem auto;
+        padding-top: 3rem;
+        margin-bottom: 0;
+        height: auto;
+    }
+    #pbox {
+        background: #fff;
+        margin-top: -.5rem;
+        padding-bottom: 7rem;
+        margin-bottom: 0;
+        height: 25rem;
+    }
+    #pbox:before, #pbox:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 5px rgba(7, 7, 7, .8);
+        top: 4.7rem;
+        margin: auto;
+        bottom: 42.1rem;
+        left: 25%;
+        right: 25%;
+        max-width: 400px; 
+    }
+    #foliocontainer {
+        margin-top: 2rem;
+        padding: 7rem 0;
+    }
+    #foliocontainer img {
+        position: relative;
+        width: 35%;
+        display: inline-block;
+        margin: 1rem;
+        max-width: 300px;
+        border: solid #fff 7px;
+        box-shadow: 1px 1px 3px #777;
+    }
+/*******************ABOUT ME********************/
+    #aboutme {
+        position: relative;
+        background: #d7d7d7;
+        z-index: 0;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        margin-bottom: -3.5rem;
+    }
+    #amcontent {
+        width: 50%;
+        max-width: 400px;
+        background: #fff;
+        margin: 3.5rem auto;
+        margin-bottom: -1;
+        height: 40rem;
+        padding-top: 3rem;
+    }
+    #amcontent:before, #amcontent:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 5px rgba(7, 7, 7, .4);
+        top: 4.7rem;
+        bottom: .2rem;
+        left: 25%;
+        width: 50%;
+        right: 25%;
+        max-width: 400px;
+        margin: auto;
+    }
+    #aboutme h1 {
+        padding-top: 1rem;
+    }
+    #aboutme p {
+        line-height: 1rem;
+    }
+/********************CONTACT ME*******************/
+    #contactneil {
+        padding-top: 1rem;
+        z-index: 5;
+        padding-bottom: .1rem;
+    }
+    #cbox {
+        width: 50%;
+        max-width: 400px;
+        background: #fff;
+        margin: 3.5rem auto;
+        height: 27rem;
+        padding-top: 3rem;
+    }
+    #cbox:before, #cbox:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        box-shadow: 0 0 5px rgba(7, 7, 7, .4);
+        top: 4.7rem;
+        bottom: 3.8rem;
+        left: 25%;
+        width: 50%;
+        right: 25%;
+        max-width: 400px;
+        margin: auto;
+    }
+    input {
+        background: #d7d7d7;
+    }
+    textarea {
+        background: #d7d7d7;
+    }
+/*#############################################################################
+                        800px
+#############################################################################*/
+}
+@media screen and (min-width: 800px) {
+    ul:before, ul:after {
+        width: 53%;
+        -webkit-box-shadow: 0 15px 10px #777;
+        -moz-box-shadow: 0 15px 10px #777;
+        box-shadow: 0 15px 10px #777;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
+/*#############################################################################
+                        1390px
+#############################################################################*/
+@media screen and (min-width: 1390px) {
+    #lpbox {
+        height: 33rem;
+    }
+    #pbox {
+        height: 20rem;
+        padding-bottom: 0rem;
+    }
+    #pbox:before, #pbox:after {
+        top: 4.7rem;
+        bottom: 23rem;
+    }
+    #foliocontainer {
+        margin-top: 0rem;
+        padding: 7rem 0;
+        padding-top: 0rem;
+    }
+    #contactneil {
+        padding-bottom: 2.3rem;
+    }
+    #cbox:before, #cbox:after {
+        bottom: 6rem;
+    }
+}
+@media screen and (min-width: 1390px), screen and (min-height: 900px) {
+    #landingpage {
+        padding-bottom: 7.4rem;
+    }
+    #lpbox:before, #lpbox:after {
+        bottom: 7.5rem;
+    }
+    #contactneil {
+        padding-bottom: 7.3rem;
+    }
+    #cbox {
+        height: 30rem;
+    }
+    #cbox:before, #cbox:after {
+        bottom: 11rem;
+    }
+}
+
+
+
+
+
+
+
+

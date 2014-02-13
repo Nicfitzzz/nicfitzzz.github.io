@@ -218,6 +218,7 @@ html {
     #portfolio h1 {
         padding:0 5rem;
         line-height: 4rem;
+        letter-spacing: .25rem;
     }
     .previews {
         position: relative;

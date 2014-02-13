@@ -1,5 +1,5 @@
 <!--===============================
-		neilsalazar.com v2.0
+		neilsalazar.com v3.0
 ================================-->
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +23,7 @@
 		<!--=============================
 			CSS Links
 		==============================-->
-		<link rel="stylesheet" href="NSdotcom.css"/>
+		<link rel="stylesheet" href="NSdotcom-redux.css"/>
 		<!--=============================
 			Javasctipt/JQuery Links
 		==============================-->
@@ -33,50 +33,44 @@
 			</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 			</script>
-		<script src="/javascripts/backgroundcolors.js"></script> 		
+		<script src="/javascripts/backgroundcolorss.js"></script> 		
 	</head>
-<body id="title">
-	<nav>
-		<ul>
-			<li><a id="home" class="js_onPageLink" href="#title">home</a></li>
-			<li><a id="folio" class="js_onPageLink" href="#portfolio">folio</a></li>
-			<li><a id="about" class="js_onPageLink" href="#aboutme">about</a></li>
-			<li><a id="contact" class="js_onPageLink" href="#contactneil">contact</a></li>
-		</ul>
-	</nav>
-	<div id="imagebackground"></div><!--tori gate for desktop size-->
-	<div  id="landingpage">
-	<header>
-		<h1><a href="#foliodepth" class="js_onPageLink">&lsaquo;develop&rsaquo;</a></h1>
-		<a href="#foliodepth" class="js_onPageLink"><img id="logo" src="/images/nslogov2white.png" alt="Neil Salazar Logo"/></a>
-		<h1><a href="#foliodepth" class="js_onPageLink">design</a></h1>
-		
-	</header>
-	<main>
-		<section>
-			<p>Hi. My name is Neil. I create and code things on the web. I would love to help you code and create your next project!</p>
-		</section>
+<body>
+	<div id="landingpage">
+		<div id="ribbonkeeper">
+			<nav>
+				<ul>
+					<li><a id="folio" class="js_onPageLink" href="#portfolio">portfolio</a></li>
+					<li><a id="about" class="js_onPageLink" href="#aboutme">about</a></li>
+					<li><a id="contact" class="js_onPageLink" href="#contactneil">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="lpbox">
+		<header>
+			<h1>&lsaquo;develop&rsaquo;</h1>
+				<img class="logo" src="/images/nslogov2.png" alt="Neil Salazar Logo"/>
+			<h1>design</h1>
+		</header>
+			<p>Hi. My name is Neil. I create and code things on the web. I would love to help code and create your next project.</p>
+		</div>
 	</div>	
 <!--================PORTFOLIO SECTION==================-->
-		<section id="portfolio">
-				<h1>Portfolio and Projects</h1>
-				<br>
-			<div id="foliocontent1">
-				<a href="http://arendainfinancial.com" target="blank"><img class="previews" src="/images/afscreenshot.jpg" alt="screen shot of arendainfinancial.com"/></a>
-				<p>A simple website I created for a client. Click image above to see it live. <a class="js_onPageLink" href="#foliodepth">Learn more.</a></p>
-				<a href="http://projects.neilsalazar.com/bunkasai.html"><img class="previews" src="/images/fourpiece.jpg" alt="Web portfolio version 1"/></a>
-				<p>In the early stages of creating a website for a school festival known as a Bunkasai.  Stay tuned...</p>
-				<br>
-			</div>
-			<div id="foliocontent2">
-				<a href="http://projects.neilsalazar.com/japan-trip-2010.html"><img class="previews" src="/images/jtrippiece.jpg" alt="JTrip Project"/></a>
-				<p>Current project to inform and promote a biennial trip to Japan.<a class="js_onPageLink" href="#foliodepth"> Learn more.</a></p>
-				<img class="previews" src="/images/threepiece.jpg" alt="portfolio filler"/>
-				<p>Simple banner design for my photography website, which is currently lacking enough photos to make it worthwhile. Slowly building, but perpetually in motion.</p>
-				
-				<br>
-			</div>
-			<div id="foliodepth">
+		<main>
+			<section id="portfolio">
+				<div id="pbox">
+					<a href="#foliocontainer"><h1>portfolio&shy;.projects</h1></a>
+					<img class="logo" src="/images/nslogov2.png" alt="Neil Salazar Logo"/>
+					<a href="http://neilsalazar.com/theprocess.html"><h2>the process</h2></a>
+				</div>
+				<div id="foliocontainer">
+						<a href="http://neilsalazar.com"><img src="/images/nsredux.jpg" alt="screen shot of neilsalazar.com"/></a>
+						<a href="http://www.jnhsbunkasai.org"><img src="/images/bunkredux.jpg" alt="Screen shot jnhsbunkasai.org"/></a>
+						<a href="http://projects.neilsalazar.com/japan-trip-2010.html"><img class="previews" src="/images/jtripredux.jpg" alt="JTrip Project"/></a>
+						<a href="http://arendainfinancial.com" target="blank"><img class="previews" src="/images/afredux.jpg" alt="screenshot arendainfinancial.com"/></a>	
+				</div>
+			</section>
+<!--		<section id="foliodepth">
 				<h1>Being Responsive</h1>
 				<p class="intro">I surf the web on my phone, my tablet, my laptop, and my 27" monitor. I know I'm not alone, so I venture to make every website I make provide an optimal experience for all its viewers... regardless of their preferred device.</p>
 				<a href="http://arendainfinancial.com" target="blank"><img class="foliopics" src="/images/afportfolio.jpg" alt="Arendain Financial website image"/></a>
@@ -88,20 +82,18 @@
 				<p class="desc">This page is in the process of being created to share the experience of Cupertino High School students and their trip to Japan in 2010.<br>
 				<br>The goal is not only to display the experience of the participants, but to also provide information for future students, parents, and the community, in order to promote future support.<br>
 				<br>I have been on other trips besides the one in 2010, but that was the year I took the most pictures. I love to use my own pictures when creating websites, because I feel I have more options, I get the shots I need, plus no paying for stock images!</p>
-			</div>
 		</section>
 <!--================ABOUT SECTION======================-->
 		
 		<section id="aboutme">
-			<div id="aecontent">
+			<div id="amcontent">
 				<img id="selfie" src="/images/me.jpg" alt="pic of Neil">
 				<hgroup>
 					<h1>this.isNeil</h1> 
 				</hgroup>
 				<br>
 				<p>I thoroughly enjoy developing and designing things on the web. I continually strive to create spaces that exhibit beautiful imagery, engaging content, and a useable interface. Using HTML, CSS, JQuery, JavaScript, and a pinch of PHP I aim to write and maintain clean code. I am perpetually educating myself on the latest trends and techniques, with the goal of creating sites that are elegant, responsive, and as future proof as possible.</p>
-				<br>
-				<p>When I'm not busy learning, designing, or coding, (which is rare) you may find me playing basketball or volleyball, riding my bike in the mountains or on the street, taking pictures, traveling, or spending quality time with my family.<p>
+				<p>When I'm not busy learning, designing, or coding, (which is rare) you may find me playing basketball or volleyball, riding my bike in the mountains or on the street, taking pictures, traveling, or spending quality time with my family.</p>
 				<p>Yes, this is Neil, I try and keep busy.</p>
 			</div>
 		</section>
@@ -109,6 +101,7 @@
 <!--===================CONTACT FORM ===================-->
 
 		<section id="contactneil">
+			<div id="cbox">
 				<form method="post" class="contactform" action="contact.php">
 						<h1>Let's create and build!</h1>
 					<fieldset>
@@ -121,7 +114,11 @@
 							<input ID="sbutton" type="submit" value="Contact Neil">
 						</fieldset>
 					</form>
+				</div>
 		</section>
+		<footer>
+			<p>&copy;neil salazar 2014</p>
+		</footer>
 
 </body>
 </html>
