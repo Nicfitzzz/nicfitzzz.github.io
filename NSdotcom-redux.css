@@ -109,9 +109,13 @@ input, select {
 ##########################*/
 a {
     text-decoration: none;
+    color: #4d4d4d;
 }
 a:active {
     color: #fff;
+}
+a:visited {
+    color: #4d4d4d;
 }
 html {
     font-size: 16pt;
@@ -180,10 +184,10 @@ html {
         left: 7%;
         width: 50%;
         top: .6rem;
-        background: #777;
-        -webkit-box-shadow: 0 15px 5px #777;
-        -moz-box-shadow: 0 15px 5px #777;
-        box-shadow: 0 15px 5px #777;
+        background: #4d4d4d;
+        -webkit-box-shadow: 0 15px 5px #4d4d4d;
+        -moz-box-shadow: 0 15px 5px #4d4d4d;
+        box-shadow: 0 15px 5px #4d4d4d;
         -webkit-transform: rotate(-3deg);
         -moz-transform: rotate(-3deg);
         -o-transform: rotate(-3deg);
@@ -243,7 +247,6 @@ html {
 /**************PORTFOLIO****************/
     section {
         position: relative;
-        background: rgb(252, 241, 199);
         text-align: center;
         padding: 7rem 0;
         padding-bottom: 4rem;
@@ -251,13 +254,11 @@ html {
     #portfolio h1 {
         margin-bottom: 1rem;
     }
-    #portfolio h1:hover, #portfolio h2:hover {
-        color: #416CFA;
-    }
     #portfolio h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: #4d4d4d;
         margin-bottom: 3rem;
+        font-style: italic;
     }
     #foliocontainer {
         padding-top: 5rem;
@@ -275,7 +276,7 @@ html {
         margin: 1rem;
         max-width: 300px;
         border: solid #fff 7px;
-        box-shadow: 1px 1px 3px #777;
+        box-shadow: 1px 1px 3px #4d4d4d;
     }
     #portfolio p, #foliodepth p, #aboutme p {
         font-size: .75rem;
@@ -285,6 +286,19 @@ html {
         hyphen: auto;
         line-height: .9rem;
         color: #4D4D4D;
+    }
+    #portfolio a:hover {
+        color: #416CFA;
+    }
+    #pbox p {
+        margin-top: -.5rem;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 1.5rem;
+    }
+    #portfolio .logo {
+        width: 7%;
+        display: inline-block;
     }
     #foliodepth {
         background: #fff;
@@ -308,6 +322,7 @@ html {
 /*****************CONTACT********************/
     #contactneil {
         padding-bottom: 11rem;
+        background: rgba(120, 120, 117, .75);
     }
     #contactneil h1 {
         font-size: 1.5rem;
@@ -346,13 +361,17 @@ html {
         color: #fff;
         font-size: .65rem;
     }
-    footer {
+    #footer {
+        position: absolute;
+        width: 100%;
+        margin: auto;
+        bottom: 0;
+        z-index: 100;
         text-align: center;
         font-size: .5rem;
         text-transform: uppercase;
         letter-spacing: .10rem;
-        color: #4d4d4d;
-        background: rgb(252, 241, 199);
+        color: #fff;
     }
 }
 /*#############################################################################
@@ -372,9 +391,9 @@ html {
     }
     ul:before, ul:after {
         height: 1rem;
-        -webkit-box-shadow: 0 17px 10px #777;
-        -moz-box-shadow: 0 17px 10px #777;
-        box-shadow: 0 17px 10px #777;
+        -webkit-box-shadow: 0 17px 10px #4d4d4d;
+        -moz-box-shadow: 0 17px 10px #4d4d4d;
+        box-shadow: 0 17px 10px #4d4d4d;
     }
     #lpbox {
         width: 50%;
@@ -420,13 +439,14 @@ html {
 
 /*********************PORTFOLIO**********************/
     #portfolio {
-        background: rgba(255, 255, 255, .5);
+        background: #4d4d4d;
         position: relative;
         padding-top: 5rem;
         padding-bottom: 0;
+        z-index: 10;
     }
-    #portfolio:before {
-        background: #fff;
+    #portfolio:after {
+        background: url(/images/graff.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -437,9 +457,11 @@ html {
         left: 0;
         right: 0;
         bottom: 0;
-        -webkit-filter: grayscale(.7);
+        -webkit-filter: blur(0px);
+        opacity: .33;
     }
     #pbox, #foliocontent1, #foliocontent2 {
+        position: relative;
         width: 50%;
         max-width: 400px;
         background: #fff;
@@ -458,7 +480,7 @@ html {
     #pbox:before, #pbox:after {
         content: "";
         position: absolute;
-        z-index: -1;
+        z-index: 5;
         box-shadow: 0 0 5px rgba(7, 7, 7, .8);
         top: 4.7rem;
         margin: auto;
@@ -478,16 +500,30 @@ html {
         margin: 1rem;
         max-width: 300px;
         border: solid #fff 7px;
-        box-shadow: 1px 1px 3px #777;
+        box-shadow: 1px 1px 3px #4d4d4d;
     }
 /*******************ABOUT ME********************/
     #aboutme {
+        background: rgba(22, 29, 28, .75);
         position: relative;
-        background: #d7d7d7;
         z-index: 0;
         padding-top: 1rem;
         padding-bottom: 0rem;
         margin-bottom: -3.5rem;
+    }
+    #aboutme:after {
+        background: url(/images/oldschool.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .5;
     }
     #amcontent {
         width: 50%;
@@ -523,6 +559,20 @@ html {
         z-index: 5;
         padding-bottom: .1rem;
     }
+    #contactneil:before {
+        background: url(/images/messagesleft.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: -1;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .5;
+    }
     #cbox {
         width: 50%;
         max-width: 400px;
@@ -557,9 +607,9 @@ html {
 @media screen and (min-width: 800px) {
     ul:before, ul:after {
         width: 53%;
-        -webkit-box-shadow: 0 15px 10px #777;
-        -moz-box-shadow: 0 15px 10px #777;
-        box-shadow: 0 15px 10px #777;
+        -webkit-box-shadow: 0 15px 10px #4d4d4d;
+        -moz-box-shadow: 0 15px 10px #4d4d4d;
+        box-shadow: 0 15px 10px #4d4d4d;
     }
     h1 {
         font-size: 2rem;
@@ -573,17 +623,17 @@ html {
         height: 33rem;
     }
     #pbox {
-        height: 20rem;
+        height: 17rem;
         padding-bottom: 0rem;
     }
     #pbox:before, #pbox:after {
         top: 4.7rem;
-        bottom: 23rem;
+        bottom: 25rem;
     }
     #foliocontainer {
         margin-top: 0rem;
         padding: 7rem 0;
-        padding-top: 0rem;
+        padding-top: 5rem;
     }
     #contactneil {
         padding-bottom: 2.3rem;
