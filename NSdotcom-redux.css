@@ -422,7 +422,7 @@ html {
         padding-bottom: 0;
     }
     #landingpage:before {
-        background: url(/images/miyajima.png);
+        background: url(/images/miyajima.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -472,7 +472,7 @@ html {
     }
     #pbox {
         background: #fff;
-        margin-top: -.5rem;
+        margin-top: -.7rem;
         padding-bottom: 7rem;
         margin-bottom: 0;
         height: 25rem;
