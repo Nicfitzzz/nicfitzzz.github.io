@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <!--===============================
 		neilsalazar.com v3.0
 ================================-->
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -27,13 +27,11 @@
 		<!--=============================
 			Javasctipt/JQuery Links
 		==============================-->
-		<script src="http://code.jquery.com/jquery-1.9.1.js">
-			</script>
 		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js">
 			</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 			</script>
-		<script src="/javascripts/backgroundcolorss.js"></script> 		
+		<script type="text/javascript" src="javascripts/interaction.js"></script>		
 	</head>
 <body>
 	<div id="landingpage">
@@ -59,39 +57,55 @@
 		<main>
 			<section id="portfolio">
 				<div id="pbox">
-					<h1><a href="#foliocontainer">portfolio</a></h1>
+					<h1><a href="#largefoliocontainer">portfolio</a></h1>
 					<a href="http://github.com/neilsalazar"><img class="logo" src="/images/github4d.png" alt="GitHub Logo"/></a>
 						<p><a href="http://github.com/neilsalazar">github</a></p>
-					<h2><a href="http://neilsalazar.com/theprocess.html">&ldquo;the process&rdquo;</a></h2>
+					<h2><a href="/the-process.html">&ldquo;the process&rdquo;</a></h2>
 				</div>
-				<div id="foliocontainer">
-						<a href="http://neilsalazar.com"><img src="/images/nsredux.jpg" alt="screen shot of neilsalazar.com"/></a>
-						<a href="http://www.jnhsbunkasai.org"><img src="/images/bunkredux.jpg" alt="Screen shot jnhsbunkasai.org"/></a>
-						<a href="http://projects.neilsalazar.com/japan-trip-2010.html"><img class="previews" src="/images/jtripredux.jpg" alt="JTrip Project"/></a>
-						<a href="http://arendainfinancial.com" target="blank"><img class="previews" src="/images/afredux.jpg" alt="screenshot arendainfinancial.com"/></a>	
+				<div id="largefoliocontainer">
+					<div class="foliocontainer" id="folio1">
+							<a href="#folio1"><img src="/images/nsredux.jpg" alt="screen shot of neilsalazar.com"/></a>
+							<ul class="portfolio-description">
+								<li><strong>What is it:</strong> This is the 3rd iteration of my portfolio website. I am constantly learning new things and always find ways to improve my portfolio.</li>
+								<li><strong>Accomplishments:</strong> CSS shadows, jquery selectors, .slideToggle, too many to list.</li>
+								<li><strong>What I Learned:</strong> Again too many to list, but I'm learning that I will never stop learning, because there is so much more to learn.</li>
+								<li><strong>View website: </strong><a href="#">To the top!</a></li>
+							</ul>
+					</div>
+					<div class="foliocontainer" id="folio2">
+							<a href="#folio2"><img src="/images/bunkredux.jpg" alt="Screen shot jnhsbunkasai.org"/></a>
+							<ul class="portfolio-description">
+								<li><strong>What is it:</strong> I volunteered to make a website for a school function. The purpose was to create an informative website for the festival. Collaboratively students helped with design and copy, while I wrote the code.</li>
+								<li><strong>Accomplishment:</strong> First mobile slide out menu created from scratch using javascript.</li>
+								<li><strong>What I Learned:</strong> The importance of timely communication, especially when recieving copy and design input.</li>
+								<li><strong>View website: </strong><a href="http://www.jnhsbunkasai.org">JNHS Bunkasai 2014</a></li>
+					</div>
+					<div class="foliocontainer" id="folio3">
+							<a href="#folio3"><img class="previews" src="/images/jtripredux.jpg" alt="JTrip Project"/></a>
+							<ul class="portfolio-description">
+								<li><strong>What is it:</strong> This is another side project I'm working on for the Japanese language students at Cupertino High School. Every couple years the Japanese teacher at CHS takes a group of students to Japan. The purpose of the website is being created to share the experience of the travelers as well show others what the trip is about and how empowering it is for the students</li>
+								<li><strong>Accomplishment:</strong> Used jquery and CSS to create a random color change on the borders of the images of the students at a set interval. <a href="http://projects.neilsalazar.com/japan-trip-2010.html#travelers">Check it out!</a></li>
+								<li><strong>What I Learned:</strong> That I can use both javascript and jquery to accomplish a goal. </li>
+								<li><strong>View website: </strong><a href="http://projects.neilsalazar.com/japan-trip-2010.html">Japan Trip 2010</a></li>
+							</ul>
+					</div>
+					<div class="foliocontainer" id="folio4">		
+							<a href="#folio4"><img class="previews" src="/images/afredux.jpg" alt="screenshot arendainfinancial.com"/></a>
+							<ul class="portfolio-description">
+								<li><strong>What is it:</strong> It came up that my tax accountant wanted some revamping of his website. This would be my first website that I've built in years. The goal was to create a place where new clients can learn about Arendain Financial, while also providing his current clients with resources to aid in their tax preparation. Working with Joel, I was able to meet his needs, while also building my portfolio.</li>
+								<li><strong>Accomplishment:</strong> One of the first sites I've built. Biggest accomplishments were creating a form that emailed Joel the responses, as well creating a 'sticky nav' from scratch with very few lines of code. </li>
+								<li><strong>What I Learned:</strong> I learned that it is important to communicate with the client and ensure that everyone is on the same page. I also learned the importance of making professional decisions that are in the best interest of the client as well as being honest about what is possible and what is not. Lastly as this was one of my first pages, learning to use my resources (other developers/designers) has proven to be invaluable.</li>
+								<li><strong>View website: </strong><a href="http://www.arendainfinancial.com">Arendain Financial</a></li>
+							</ul>	
+					</div>
 				</div>
 			</section>
-<!--		<section id="foliodepth">
-				<h1>Being Responsive</h1>
-				<p class="intro">I surf the web on my phone, my tablet, my laptop, and my 27" monitor. I know I'm not alone, so I venture to make every website I make provide an optimal experience for all its viewers... regardless of their preferred device.</p>
-				<a href="http://arendainfinancial.com" target="blank"><img class="foliopics" src="/images/afportfolio.jpg" alt="Arendain Financial website image"/></a>
-				<p class="desc">My client, Joel, from Arendain Financial wanted a basic site that looked professional and modern. He needed a page that provided information for potential clients, while still being useful for current clients. Together we collaborated about design, copy, his needs, and how we could meet them.<br>
-				<br>We decided the main goals were for contact information and forms, as well providing clients with a calendar for them to view and make appointments.<br>
-				<br>The site is live and finished... for now. Talking in person, over the phone, through email and texts, we were able to create something great. <a href="http://arendainfinancial.com">Take a look!</a><br>
-				<br>Even though the project is done for now, Joel and I have already been talking about taking the the page to the next level. Working together on projects, and finding ways to enhance the usability of my clients' websites, while maintaining simplicity and beauty, is what I love to do.</p>
-				<img class="foliopics" src="/images/jtripportfolio.jpg" alt="Japan Trip website image"/>
-				<p class="desc">This page is in the process of being created to share the experience of Cupertino High School students and their trip to Japan in 2010.<br>
-				<br>The goal is not only to display the experience of the participants, but to also provide information for future students, parents, and the community, in order to promote future support.<br>
-				<br>I have been on other trips besides the one in 2010, but that was the year I took the most pictures. I love to use my own pictures when creating websites, because I feel I have more options, I get the shots I need, plus no paying for stock images!</p>
-		</section>
-<!--================ABOUT SECTION======================-->
+<!--===============ABOUT SECTION======================-->
 		
 		<section id="aboutme">
 			<div id="amcontent">
 				<img id="selfie" src="/images/me.jpg" alt="pic of Neil">
-				<hgroup>
 					<h1>this.isNeil</h1> 
-				</hgroup>
 				<br>
 				<p>I thoroughly enjoy developing and designing things on the web. I continually strive to create spaces that exhibit beautiful imagery, engaging content, and a useable interface. Using HTML, CSS, JQuery, JavaScript, and a pinch of PHP I aim to write and maintain clean code. I am perpetually educating myself on the latest trends and techniques, with the goal of creating sites that are elegant, responsive, and as future proof as possible.</p>
 				<p>When I'm not busy learning, designing, or coding, (which is rare) you may find me playing basketball or volleyball, riding my bike in the mountains or on the street, taking pictures, traveling, or spending quality time with my family.</p>
@@ -111,16 +125,16 @@
 							<label for="email"></label>
 							<input ID="email" name="email" type="email" required aria-required="true" placeholder="Email" maxlength="50">
 							<label for="message"></label>
-							<textarea ID="message" name="comments" type="text" maxlength="1000" placeholder="Message!"></textarea>
+							<textarea ID="message" name="comments" maxlength="1000" placeholder="Message!"></textarea>
 							<input ID="sbutton" type="submit" value="Contact Neil">
-						</fieldset>
-					</form>
-				</div>
+					</fieldset>
+				</form>
+			</div>
 			<p id="footer">&copy;neil salazar 2014</p>
 		</section>
 		<footer>
 			
 		</footer>
-
+	</main>
 </body>
 </html>

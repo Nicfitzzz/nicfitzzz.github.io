@@ -67,6 +67,10 @@ a {
     position: relative;
     z-index: 100;
 }
+a:focus {
+    outline: solid 1px #fff;
+}
+
 
 /* change colours to suit your needs */
 ins {

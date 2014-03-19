@@ -61,6 +61,10 @@ a {
     vertical-align:baseline;
     background:transparent;
 }
+a:focus {
+    outline: solid 1px #fff;
+}
+
 
 /* change colours to suit your needs */
 ins {
@@ -170,12 +174,12 @@ html {
         max-width: 800px;
         margin: auto;
     }
-    ul {
+    #ribbonkeeper ul {
         width: 90%;
         margin: 0 auto;
         background: #FACF41;
     }
-    ul:before, ul:after {
+    #ribbonkeeper ul:before, #ribbonkeeper ul:after {
         z-index: -1;
         position: absolute;
         content: "";
@@ -194,7 +198,7 @@ html {
         -ms-transform: rotate(-3deg);
         tranform: rotate(-3deg);
     }
-    ul:after {
+    #ribbonkeeper ul:after {
         -webkit-transform: rotate(3deg);
         -moz-transform: rotate(3deg);
         -o-transform: rotate(3deg);
@@ -203,7 +207,7 @@ html {
         right: 7%;
         left: auto;
     }
-    ul li {
+    #ribbonkeeper ul li {
         display: inline-block;
         margin: 0 -.125rem;
         padding: .75rem .35rem;
@@ -211,14 +215,14 @@ html {
         line-height: 1rem;
         height: 2.5rem;
     }
-    ul li a {
+    #ribbonkeeper ul li a {
         color: #4D4D4D;
         transition: .25s;
     }
-    ul li a:visited {
+    #ribbonkeeper ul li a:visited {
         color: #4d4d4d;
     }
-    ul li a:hover {
+    #ribbonkeeper ul li a:hover {
         color: #fff;
     }
     header h1 {
@@ -260,7 +264,7 @@ html {
         margin-bottom: 3rem;
         font-style: italic;
     }
-    #foliocontainer {
+    #largefoliocontainer {
         padding-top: 5rem;
     }
     #foliocontainer a:visited {
@@ -269,14 +273,40 @@ html {
     #foliocontainer a:active {
     color: #fff;
     }
-    #foliocontainer img {
+    .foliocontainer {
         position: relative;
         width: 75%;
         display: inline-block;
         margin: 1rem;
         max-width: 300px;
+        
+    }
+    .foliocontainer img {
+        width: 100%;
+        max-width: 300px;
         border: solid #fff 7px;
         box-shadow: 1px 1px 3px #4d4d4d;
+    }
+    .foliocontainer ul {
+        display: none;
+        position: relative;
+        width: 90%;
+        margin: 1rem;
+        max-width: 300px;
+        list-style: none;
+    } 
+    .foliocontainer ul li {
+        color: #4d4d4d;
+        text-align: left;
+        margin-top: .75rem;
+        font-size: .75rem;
+        line-height: .9rem;
+        font-family: avenir;
+        letter-spacing: .05rem;
+    }
+    .foliocontainer a {
+        color: #4d4d4d;
+        text-decoration: underline;
     }
     #portfolio p, #foliodepth p, #aboutme p {
         font-size: .75rem;
@@ -380,16 +410,16 @@ html {
 ###############################################################################
 #############################################################################*/
 @media screen and (min-width: 600px) {
-    ul {
+    #ribbonkeeper ul {
         max-width: 700px;
     }
-    ul li {
+    #ribbonkeeper ul li {
         padding: .75rem 1rem;
     }
-    ul li a:hover {
+    #ribbonkeeper ul li a:hover {
         font-size: .9rem;
     }
-    ul:before, ul:after {
+    #ribbonkeeper ul:before, #ribbonkeeper ul:after {
         height: 1rem;
         -webkit-box-shadow: 0 17px 10px #4d4d4d;
         -moz-box-shadow: 0 17px 10px #4d4d4d;
@@ -502,6 +532,9 @@ html {
         border: solid #fff 7px;
         box-shadow: 1px 1px 3px #4d4d4d;
     }
+    .foliocontainer ul li, .foliocontainer a {
+        color: #fff;
+    }
 /*******************ABOUT ME********************/
     #aboutme {
         background: rgba(22, 29, 28, .75);
@@ -605,7 +638,7 @@ html {
 #############################################################################*/
 }
 @media screen and (min-width: 800px) {
-    ul:before, ul:after {
+    #ribbonkeeper ul:before, #ribbonkeeper ul:after {
         width: 53%;
         -webkit-box-shadow: 0 15px 10px #4d4d4d;
         -moz-box-shadow: 0 15px 10px #4d4d4d;
