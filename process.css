@@ -130,26 +130,39 @@ input, select {
 ###############################################################################
 #############################################################################*/
 @media screen and (min-width: 300px) {
-    hgroup {
-        font-size: 3rem;
-        height: 10rem;
+    #nav li {
+        position: relative;
+        display: inline-block;
+        padding: 0 .5rem;
+        padding-top: .5rem;
+        text-transform: uppercase;
+        font-size: .65rem;
+        letter-spacing: .07rem;
+    }
+    #nav li a:hover {
+        color: #fff;
+    }
+    #nav {
+        height: 15rem;
         text-align: center;
         background: #000;
         position: relative;
         padding: 0 1rem;
-    }
-    hgroup h1 {
         background: #000;
-        padding-top: 3rem;
-        color: #fff;
+    }
+    #nav h1 {
+        background: #000;
+        padding-top: 2rem;
+        color: #698BFA;
         font-family: Lato-Lig;
         font-size: 2rem;
     }
-    hgroup h3 {
+    #nav h3 {
         font-family: Lato-Lig;
         color: #fff;
         font-size: 1.5rem;
         line-height: 1.5rem;
+        padding-top: 1rem;
     }
     #p0, #p1, #p2, #p3 {
         font-size: 1.25rem;
@@ -180,7 +193,8 @@ input, select {
         text-align: left;
     }
     div h3 {
-        padding-top: 3rem;
+        background: #000;
+        padding-top: 5rem;
         padding-bottom: 1rem;
         font-size: 1.5rem;
     }
@@ -214,7 +228,7 @@ input, select {
         padding-bottom: 1rem;
     }
     form {
-        padding-top: 5rem;
+        padding-top: 7rem;
         margin: auto;
         max-width: 400px;
     }
@@ -246,6 +260,17 @@ input, select {
         letter-spacing: .15rem;
         z-index: 1000;
     }
+    .stucknav {
+        position: fixed;
+        top: 0;
+        background: #000;
+        z-index: 99999;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        padding-top: 0;
+    }
 }
 /*#############################################################################
 ###############################################################################
@@ -253,6 +278,12 @@ input, select {
 ###############################################################################
 #############################################################################*/
 @media screen and (min-width: 600px) {
+    #nav li {
+        font-size: .9rem;
+    }
+    #nav {
+        height: 10rem;
+    }
     #p1, #p2, #p3 {
         padding: 0 7rem;
         padding-top: 38rem;
@@ -260,12 +291,29 @@ input, select {
     #p0 {
         height: 50rem;
     }
+    div h3 {
+        padding-top: 3rem;
+    }
+    form {
+        padding-top: 5rem;
+    }
 }
 @media screen and (min-width: 1200px) {
     #p0 {
     background-size: cover;
     }   
+    .stucknav {
+        position: fixed;
+        top: 0;
+        background: #000;
+        z-index: 99999;
+        width: 100%;
+        margin: 0;
+        padding: .5rem;
+        padding-top: 0;
+    }
 }
+
 
 
 

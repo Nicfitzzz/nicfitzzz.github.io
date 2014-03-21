@@ -1,11 +1,12 @@
 $(document).ready(function() {
-$(".foliocontainer").on("click", function() {
-	var $thisPortDesc = $(this).find(".portfolio-description");
-	$(".portfolio-description").not($thisPortDesc).css("display", "none");
-	$(this).find($(".portfolio-description")).slideToggle();
 
-	$(this).css("padding-top", "5rem")
+$(".foliocontainer").find('a').find('img').on("click", function(event) {
+	var $thisPortDesc = $(this).closest($('.foliocontainer')).find($(".portfolio-description"));
+		
+		$(".portfolio-description").not($thisPortDesc).slideUp();
+		$thisPortDesc.slideToggle();
 
+		event.preventDefault();
 });
 
 })

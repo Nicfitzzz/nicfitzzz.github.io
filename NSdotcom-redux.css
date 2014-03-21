@@ -590,7 +590,7 @@ html {
     #contactneil {
         padding-top: 1rem;
         z-index: 5;
-        padding-bottom: .1rem;
+        padding-bottom: 3rem;
     }
     #contactneil:before {
         background: url(/images/messagesleft.jpg);
@@ -620,7 +620,7 @@ html {
         z-index: -1;
         box-shadow: 0 0 5px rgba(7, 7, 7, .4);
         top: 4.7rem;
-        bottom: 3.8rem;
+        bottom: 34.8rem;
         left: 25%;
         width: 50%;
         right: 25%;
